@@ -15,6 +15,6 @@ public class MainController {
    * Returns the current account balance as a decimal
    */
   public String getBalance() {
-    return String.valueOf(balanceTracker.retrieveBalance());
+    return String.format("%.2f",balanceTracker.retrieveBalance());
   }
 }
